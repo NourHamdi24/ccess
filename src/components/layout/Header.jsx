@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiSearch, FiMenu, FiX } from "react-icons/fi";
 import { useLocale, useTranslations } from "next-intl";
-import { setLocaleCookie } from "@/app/action";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -33,10 +31,9 @@ const Header = () => {
 
   const selected = options.find((l) => l.code === locale);
 
-  const switchLang = async (code) => {
-    await setLocaleCookie(code);
+  const switchLang = (code) => {
+    router.push(pathname, { locale: code });
     setOpen(false);
-    router.replace(pathname, { scroll: false });
   };
 
   return (
