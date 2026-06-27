@@ -3,7 +3,7 @@ import React from "react";
 
 const StatementSection = () => {
   return (
-    <div className="container pt-8 px-6  md:px-24 md:pt-24 lg:pt-0 lg:px-16  rounded-[50px] bg-linear-to-br from-[#3E78C5] to-[#1E3A5F] overflow-visible">
+    <div className="container pt-8 px-6  md:px-24 md:pt-24 lg:pt-0 lg:px-16   rounded-[50px] bg-linear-to-br from-[#3E78C5] to-[#1E3A5F] overflow-visible">
       <div className="flex flex-col lg:flex-row items-center gap-6">
         <div
           className="w-full lg:w-125 h-80 sm:h-96 lg:h-112.5 -mt-8 relative shrink-0"

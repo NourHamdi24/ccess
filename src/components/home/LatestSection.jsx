@@ -108,7 +108,7 @@ const LatestSection = () => {
           >
             {slides.map((slide, index) => (
               <SwiperSlide key={index} className="!h-auto">
-                <div className="relative h-60 w-full lg:w-80 overflow-hidden rounded-xl group cursor-pointer">
+                <div className="relative h-60 w-full xl:w-80 overflow-hidden rounded-xl group cursor-pointer">
                   {/* Image */}
                   <Image
                     src={slide.image}
@@ -119,7 +119,7 @@ const LatestSection = () => {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/60" />
+                  <div className="absolute inset-0 bg-black/20" />
 
                   {/* Title */}
                   <div className="absolute top-4 inset-s-4 z-10">

@@ -185,7 +185,7 @@ const NewsSection = () => {
           ) : (
             <Link key={article.id} href={`/news/${article.id}`}>
               <div>
-                <div className="relative w-full xl:w-105  h-64 lg:h-72">
+                <div className="relative w-full xl:w-100  h-64 lg:h-72">
                   <Image
                     src={article.image}
                     alt={article.title}
