@@ -1,0 +1,19 @@
+.swiper-wrapper-custom {
+  padding: 0 1rem;
+}
+@media (min-width: 1200px) {
+  .swiper-wrapper-custom {
+    padding-right: 150px;
+  }
+}
+@media (min-width: 1440px) {
+  .swiper-wrapper-custom {
+    padding-right: 130px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .swiper-wrapper-custom {
+    padding-right: 320px;
+  }
+}

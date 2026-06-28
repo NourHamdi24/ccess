@@ -1,7 +1,12 @@
+import BannerSection from "@/components/research-areas/BannerSection";
 import React from "react";
 
 const page = () => {
-  return <div>page</div>;
+  return (
+    <>
+      <BannerSection />
+    </>
+  );
 };
 
 export default page;

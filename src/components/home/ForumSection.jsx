@@ -50,7 +50,8 @@ const ForumSection = () => {
             <Image
               src="/forum/forum2.png"
               alt=""
-              fill
+              width={300}
+              height={300}
               className="object-cover"
             />
           </div>
