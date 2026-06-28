@@ -21,7 +21,7 @@ const StatementSection = () => {
             alt="quote mark"
             width={64}
             height={64}
-            className="absolute hidden lg:visible top-10 left-0"
+            className="absolute hidden lg:block top-10 left-0"
           />
         </div>
 
@@ -52,7 +52,7 @@ const StatementSection = () => {
               alt="quote mark"
               width={64}
               height={64}
-              className="w-10 h-10 hidden lg:visible lg:w-16 lg:h-16"
+              className="w-10 h-10 hidden lg:block lg:w-16 lg:h-16"
             />
           </div>
         </div>

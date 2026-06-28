@@ -6,7 +6,7 @@ const StatementSection = () => {
     <div className="container pt-8 px-6  md:px-24 md:pt-24 lg:pt-0 lg:px-16  rounded-[50px] bg-linear-to-br from-[#3E78C5] to-[#1E3A5F] overflow-visible">
       <div className="flex flex-col lg:flex-row items-center gap-6">
         <div
-          className="w-full lg:w-125 h-80 sm:h-96 lg:h-112.5 -mt-8 relative shrink-0"
+          className="w-100 sm:w-110  md:w-130 h-80 sm:h-100   md:h-112.5 -mt-8 relative shrink-0"
           style={{ clipPath: "inset(-9999px 0 0 0)" }}
         >
           <Image
@@ -21,7 +21,7 @@ const StatementSection = () => {
             alt="quote mark"
             width={64}
             height={64}
-            className="absolute hidden lg:visible top-10 left-0"
+            className="absolute hidden lg:block top-10 left-0"
           />
         </div>
 
@@ -52,7 +52,7 @@ const StatementSection = () => {
               alt="quote mark"
               width={64}
               height={64}
-              className="w-10 h-10 hidden lg:visible lg:w-16 lg:h-16"
+              className="w-10 h-10 hidden lg:block lg:w-16 lg:h-16"
             />
           </div>
         </div>

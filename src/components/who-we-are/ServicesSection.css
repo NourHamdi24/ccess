@@ -1,5 +1,5 @@
 .swiper-wrapper-custom {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 @media (min-width: 1200px) {
   .swiper-wrapper-custom {
@@ -8,7 +8,7 @@
 }
 @media (min-width: 1440px) {
   .swiper-wrapper-custom {
-    padding-right: 90px;
+    padding-right: 130px;
   }
 }
 

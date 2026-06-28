@@ -55,7 +55,7 @@ const ServicesSection = () => {
           </Link>
         </div>
 
-        <span className="absolute left-1/2 -translate-x-1/2 lg:inset-s-4 lg:translate-x-0 -bottom-6 h-1 w-20 bg-[#EC4D38]" />
+        <span className="absolute hidden lg:block left-1/2 -translate-x-1/2 lg:inset-s-4 lg:translate-x-0 -bottom-6 h-1 w-20 bg-[#EC4D38]" />
       </div>
       <div className="w-full  swiper-wrapper-custom  overflow-hidden">
         {" "}
