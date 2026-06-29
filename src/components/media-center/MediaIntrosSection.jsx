@@ -50,7 +50,7 @@ const MediaIntrosSection = ({ date }) => {
       </div>
       <div className="bg-[#F8F8F8] rounded-4xl px-10 py-8 ">
         <div className="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-          {news.map((article) => {
+          {selectedNews.map((article) => {
             return (
               <Link key={article.id} href={`/news/${article.id}`}>
                 <div>
