@@ -1,3 +1,4 @@
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
@@ -22,6 +23,8 @@ const JoinUsSection = () => {
       shift: "دوام كامل",
     },
   ];
+  const locale = useLocale();
+
   return (
     <section className="container">
       <div className="relative text-center lg:text-start mb-16 ">
@@ -55,7 +58,7 @@ const JoinUsSection = () => {
 
             <div className="w-full md:w-auto">
               <Link
-                href={`/jobs/${item.id}`}
+                href={`/${locale}/jobs/${item.id}`}
                 className="block w-full md:w-auto text-center bg-[#1E3A5F] text-white font-bold px-5 py-3 rounded-2xl"
               >
                 اذهب للتقديم
