@@ -90,7 +90,7 @@ const ContactSection = () => {
 
           <button
             type="submit"
-            className="self-center lg:self-start  rounded-full bg-[#28456F] px-20 py-4 text-white font-semibold transition hover:bg-[#1d3658]"
+            className="self-center lg:self-start cursor-pointer rounded-full bg-[#28456F] px-20 py-4 text-white font-semibold transition hover:bg-[#1d3658]"
           >
             سجل الآن
           </button>
