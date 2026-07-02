@@ -2,7 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 const ResearchSection = () => {
   const [activeTab, setActiveTab] = useState("economy");
 
@@ -150,17 +151,34 @@ const ResearchSection = () => {
 
         <span className="absolute left-1/2 -translate-x-1/2 lg:inset-s-0 lg:translate-x-0 -bottom-6 h-1 w-20 bg-[#EC4D38]" />
       </div>{" "}
-      <div className="bg-[#F8F8F8] px-3 py-4 flex justify-evenly flex-wrap items-center gap-4 rounded-3xl mb-10 container">
-        {" "}
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={` font-bold text-2xl px-4 py-3 rounded-3xl cursor-pointer ${activeTab === tab.id ? "text-white bg-[#1E3A5F]" : "text-[#1E3A5F] bg-white"}`}
-            onClick={() => setActiveTab(tab.id)}
-          >
-            <p>{tab.label}</p>
-          </button>
-        ))}
+      <div className="bg-[#F8F8F8] px-3 py-4 rounded-3xl mb-10 container">
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={1.6}
+          breakpoints={{
+            640: {
+              slidesPerView: 3.6,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          }}
+        >
+          {tabs.map((tab) => (
+            <SwiperSlide key={tab.id}>
+              <button
+                className={`w-full font-bold  lg:text-2xl px-2 py-3 rounded-3xl cursor-pointer transition-colors ${
+                  activeTab === tab.id
+                    ? "text-white bg-[#1E3A5F]"
+                    : "text-[#1E3A5F] bg-white"
+                }`}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                <p>{tab.label}</p>
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className="bg-[#F8F8F8] rounded-4xl px-6 py-4 ">
         <div className="grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">

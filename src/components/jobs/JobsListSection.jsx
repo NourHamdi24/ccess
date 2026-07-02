@@ -4,7 +4,8 @@ import { useSelector } from "react-redux";
 import JobCard from "./JobCard";
 import { useDispatch } from "react-redux";
 import { setSelectedJobCategory } from "@/store/slices/jobsSlice";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 // jobs: array of job objects passed from the page once the endpoint is ready
 const JobsListSection = ({ jobs = [] }) => {
   const tabs = [
@@ -24,17 +25,34 @@ const JobsListSection = ({ jobs = [] }) => {
   );
   return (
     <section className="container">
-      <div className="bg-[#F8F8F8] px-3 py-4 flex justify-evenly flex-wrap items-center gap-4 rounded-3xl mb-0 container">
-        {" "}
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={` font-bold text-2xl px-6 py-6 rounded-3xl cursor-pointer ${selectedJobCategory === tab.id ? "text-white bg-[#1E3A5F]" : "text-[#1E3A5F] bg-white"}`}
-            onClick={() => dispatch(setSelectedJobCategory(tab.id))}
-          >
-            <p>{tab.label}</p>
-          </button>
-        ))}
+      <div className="bg-[#F8F8F8] px-3 py-4 rounded-3xl mb-10 container">
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={1.6}
+          breakpoints={{
+            640: {
+              slidesPerView: 3.6,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          }}
+        >
+          {tabs.map((tab) => (
+            <SwiperSlide key={tab.id}>
+              <button
+                className={`w-full font-bold  lg:text-2xl px-2 py-3 rounded-3xl cursor-pointer transition-colors ${
+                  selectedJobCategory === tab.id
+                    ? "text-white bg-[#1E3A5F]"
+                    : "text-[#1E3A5F] bg-white"
+                }`}
+                onClick={() => dispatch(setSelectedJobCategory(tab.id))}
+              >
+                <p>{tab.label}</p>
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       {selectedJobs.map((job) => (
         <div key={job.id}>

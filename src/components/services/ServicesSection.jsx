@@ -4,7 +4,8 @@ import { useState } from "react";
 import Development from "./Development";
 import Finance from "./Finance";
 import Research from "./Research";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 const ServicesSection = () => {
   const tabs = [
     { id: "research", label: " الدراسات والبحوث الاقتصادية" },
@@ -98,17 +99,34 @@ const ServicesSection = () => {
   };
   return (
     <div className="container">
-      <div className="bg-[#F8F8F8] px-3 py-4 flex justify-evenly flex-wrap items-center gap-4 rounded-3xl mb-14">
-        {" "}
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={` font-bold text-2xl px-6 py-6 rounded-3xl cursor-pointer ${activeTab === tab.id ? "text-white bg-[#1E3A5F]" : "text-[#1E3A5F] bg-white"}`}
-            onClick={() => setActiveTab(tab.id)}
-          >
-            <p>{tab.label}</p>
-          </button>
-        ))}
+      <div className="bg-[#F8F8F8] px-3 py-4 rounded-3xl mb-10 container">
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={1.6}
+          breakpoints={{
+            640: {
+              slidesPerView: 2.6,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {tabs.map((tab) => (
+            <SwiperSlide key={tab.id}>
+              <button
+                className={`w-full font-bold text-lg  lg:text-2xl px-2 py-3 rounded-3xl cursor-pointer transition-colors ${
+                  activeTab === tab.id
+                    ? "text-white bg-[#1E3A5F]"
+                    : "text-[#1E3A5F] bg-white"
+                }`}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                <p>{tab.label}</p>
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
       <div className="relative text-center lg:text-start mb-16">
         <h1 className="text-[#1E3A5F] font-bold text-3xl md:text-4xl">
