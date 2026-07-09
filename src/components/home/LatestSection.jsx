@@ -77,7 +77,7 @@ const LatestSection = () => {
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/20" />
+        {/* <div className="absolute inset-0 bg-black/20" /> */}
 
         {/* Content */}
         <div className="relative z-10 py-16 md:py-24 px-4 lg:px-0 lg:ml-20">

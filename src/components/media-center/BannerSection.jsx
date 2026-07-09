@@ -5,7 +5,7 @@ const BannerSection = () => {
     <section className="relative container mt-14 pb-6">
       <div className="rounded-[50px] overflow-x-hidden">
         <div
-          className="relative h-162.5 bg-cover bg-center rounded-[50px] overflow-hidden"
+          className="relative h-144 bg-size-[700px_650px] md:bg-size-[auto_650px] bg-no-repeat lg:bg-cover bg-center rounded-[50px] overflow-hidden"
           style={{
             backgroundImage: `url(/centerBanner.jpg)`,
           }}

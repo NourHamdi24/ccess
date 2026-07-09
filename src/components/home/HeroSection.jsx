@@ -55,7 +55,7 @@ export default function HeroSection() {
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div
-                className="relative h-[650px] bg-cover bg-center rounded-[50px] overflow-hidden"
+                className="relative h-162.5 bg-size-[700px_650px] md:bg-cover bg-no-repeat bg-center rounded-[50px] overflow-hidden"
                 style={{
                   backgroundImage: `url(${slide.image})`,
                 }}
