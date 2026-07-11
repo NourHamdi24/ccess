@@ -45,7 +45,7 @@ const Header = () => {
           <div className="relative">
             <button
               onClick={() => setOpen(!open)}
-              className="flex items-center gap-2 border border-gray-300 rounded-full px-3 py-2 bg-white"
+              className="flex items-center gap-2 border border-gray-300 rounded-full px-8 py-2 bg-white"
             >
               <span
                 className={`text-gray-500 transition-transform duration-200 ${open ? "rotate-180" : "rotate-0"}`}
@@ -123,7 +123,9 @@ const Header = () => {
           </nav>
 
           {/* Logo */}
-          <Image alt="Logo" src="/logo.png" width={100} height={50} />
+          <Link href="/" className="">
+            <Image alt="Logo" src="/logo.png" width={100} height={50} />
+          </Link>
 
           {/* Hamburger — visible on mobile/tablet only */}
           <button

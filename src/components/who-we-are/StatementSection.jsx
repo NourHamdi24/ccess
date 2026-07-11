@@ -1,16 +1,28 @@
 import Image from "next/image";
 import React from "react";
-const NewStatementSection = () => {
+const StatementSection = () => {
   return (
     <div className="container  overflow-visible">
       <div className="grid grid-cols-1  lg:grid-cols-3 items-center justify-items-center lg:justify-items-normal lg:gap-50 xl:gap-0 relative  rounded-[50px] bg-linear-to-br from-[#3E78C5] to-[#1E3A5F]">
-        <div className=" lg:relative w-80 lg:w-108 xl:w-auto">
+        <div className="relative w-80 lg:w-108 pt-4 xl:w-auto ">
+          <div className="absolute inset-x-0 bottom-0  top-3 rounded-full border border-white lg:border-0 bg-white/10 lg:bg-transparent" />
           <Image
-            src="/ceo.png"
+            src="/object.png"
+            alt="object"
+            width={92}
+            height={281}
+            className="absolute lg:hidden w-20 h-auto top-6 right-4"
+          />
+          <div className="relative z-10 block lg:hidden overflow-hidden rounded-b-full h-full">
+            <Image src="/smallceo.svg" alt="ceo" width={900} height={900} />
+          </div>
+
+          <Image
+            src="/ceo.svg"
             alt="ceo"
             width={600}
             height={600}
-            className="lg:absolute lg:bottom-0 lg:translate-y-46.5 xl:translate-y-42.5 lg:right-0"
+            className="relative z-10 hidden lg:block lg:absolute lg:bottom-0 lg:translate-y-46.5 xl:translate-y-42.5 lg:right-0 lg:[clip-path:inset(0_0_2%_0)]"
           />
         </div>
 
@@ -20,7 +32,7 @@ const NewStatementSection = () => {
             alt="quote mark"
             width={64}
             height={64}
-            className="absolute hidden lg:block top-4 lg:-right-18 xl:-right-6"
+            className="absolute w-10 lg:w-16 lg:block top-2 lg:top-4 right-6 lg:-right-18 xl:-right-6"
           />
           <h1 className="text-2xl md:text-3xl font-semibold mb-8 w-full text-center lg:text-start">
             كلمة رئيس المركز
@@ -32,10 +44,17 @@ const NewStatementSection = () => {
               الوطنية. نؤمن بأن البحث العلمي هو أساس التنمية المستدامة والتقدم
               الاقتصادي.&quot;
             </h1>
-            <div className="hidden lg:block absolute inset-s-0 top-1/2 -translate-y-1/2 h-40 w-1 bg-[#EC4D38]" />
+            <div className="absolute inset-s-0 top-1/2 -translate-y-1/2 h-24 md:h-32 lg:h-40 w-1 bg-[#EC4D38]" />
           </div>
-          <div className="flex justify-end px-2 xl:px-0 lg:justify-start items-center gap-4 lg:gap-36 mt-4 w-full">
-            <div className="">
+          <div className="flex flex-col lg:flex-row justify-center text-center lg:text-start px-2 xl:px-0 lg:justify-start items-end lg:items-center gap-2 lg:gap-36 mt-4 w-full">
+            <Image
+              src="/quoteflipped.png"
+              alt="quote mark"
+              width={64}
+              height={64}
+              className="w-10 h-10 order-first lg:order-last lg:w-16 lg:h-16"
+            />
+            <div className=" self-center">
               <h2 className="text-lg md:text-2xl font-bold">
                 د.عبد المنعم السيد
               </h2>
@@ -43,13 +62,6 @@ const NewStatementSection = () => {
                 رئيس مجلس الإدارة والمدير التنفيذي
               </p>
             </div>
-            <Image
-              src="/quoteflipped.png"
-              alt="quote mark"
-              width={64}
-              height={64}
-              className="w-10 h-10 hidden lg:block lg:w-16 lg:h-16"
-            />
           </div>
         </div>
       </div>
@@ -57,4 +69,4 @@ const NewStatementSection = () => {
   );
 };
 
-export default NewStatementSection;
+export default StatementSection;
