@@ -11,7 +11,7 @@ const StatementSection = () => {
             alt="object"
             width={92}
             height={281}
-            className="absolute lg:hidden w-20 h-auto top-6 right-4"
+            className="absolute  w-20 h-auto top-6 lg:-top-30 right-4 lg:right-6"
           />
           <div className="relative z-10 block lg:hidden overflow-hidden rounded-b-full h-full">
             <Image src="/smallceo.svg" alt="ceo" width={900} height={900} />
@@ -37,14 +37,14 @@ const StatementSection = () => {
           <h1 className="text-2xl md:text-3xl font-semibold mb-8 w-full text-center lg:text-start">
             كلمة رئيس المركز
           </h1>
-          <div className="text-lg md:text-xl font-light mb-3 text-[#EDEDED] px-2 xl:px-0 relative w-full  lg:w-2/3">
-            <h1 className="text-center lg:text-start lg:pr-8 leading-relaxed">
+          <div className="text-lg md:text-xl font-light mb-3 text-[#EDEDED] px-6 xl:px-0 relative w-full lg:w-2/3">
+            <h1 className="text-start lg:pr-8 leading-relaxed">
               &quot;نلتزم في مركز القاهرة للدراسات الاقتصادية والاستراتيجية
               بتقديم أبحاث ودراسات علمية رصينة تساهم في صنع القرارات الاقتصادية
               الوطنية. نؤمن بأن البحث العلمي هو أساس التنمية المستدامة والتقدم
               الاقتصادي.&quot;
             </h1>
-            <div className="absolute inset-s-0 top-1/2 -translate-y-1/2 h-24 md:h-32 lg:h-40 w-1 bg-[#EC4D38]" />
+            <div className="absolute inset-s-3   lg:inset-s-0 top-1/2 -translate-y-1/2 h-34 lg:h-40 w-1 bg-[#EC4D38]" />
           </div>
           <div className="flex flex-col lg:flex-row justify-center text-center lg:text-start px-2 xl:px-0 lg:justify-start items-end lg:items-center gap-2 lg:gap-36 mt-4 w-full">
             <Image

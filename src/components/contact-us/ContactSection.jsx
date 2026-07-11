@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import { FaEnvelope, FaMapPin, FaPhone, FaWhatsapp } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa";
+import { FiMapPin, FiPhone } from "react-icons/fi";
+import { PiWhatsappLogo } from "react-icons/pi";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -98,15 +99,15 @@ const ContactSection = () => {
         {/* Contact Card */}
         <div className="relative overflow-hidden rounded-3xl bg-[#2F588E] text-white p-10 flex flex-col justify-center min-h-[650px]">
           {/* Decorative circles */}
-          <div className="absolute -top-28 right-0 h-56 w-56 rounded-full border border-red-400" />
-          <div className="absolute -bottom-32 -left-32 h-72 w-72 rounded-full border border-red-400" />
-          <div className="absolute -bottom-20 -left-20 h-48 w-48 rounded-full border border-red-400" />
-
+          <div className="absolute -top-30 -right-30 h-56 w-56 rounded-full border-2 border-red-400" />
+          <div className="absolute -bottom-32 -left-46   h-86 w-86 rounded-full border-2 border-red-400" />
+          <div className="absolute -bottom-20 -left-36 h-64 w-64 rounded-full border-2 border-red-400" />
+          <div className="absolute -bottom-16 -left-30 h-50 w-50 rounded-full border-2 border-red-400" />
           <h2 className="text-3xl font-bold mb-16 ">تواصل معنا</h2>
 
           <div className="space-y-10">
             <div className="flex items-center justify-start gap-4">
-              <FaMapPin className="w-8 h-8 shrink-0" />
+              <FiMapPin className="w-8 h-8 shrink-0" />
 
               <div className="text-right">
                 <p className="font-semibold">Nasr City, Cairo</p>
@@ -115,7 +116,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center justify-start gap-4">
-              <FaPhone className="w-8 h-8 shrink-0" />
+              <FiPhone className="w-8 h-8 shrink-0" />
 
               <div className="text-right">
                 <p className="font-semibold">+20 2 1234 5678</p>
@@ -123,7 +124,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center justify-start gap-4">
-              <FaEnvelope className="w-8 h-8 shrink-0" />
+              <FaRegEnvelope className="w-8 h-8 shrink-0" />
 
               <div className="text-right">
                 <p className="font-semibold">info@ccess.gov.eg</p>
@@ -131,7 +132,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center justify-start gap-4">
-              <FaWhatsapp className="w-8 h-8 shrink-0" />
+              <PiWhatsappLogo className="w-8 h-8 shrink-0" />
 
               <div className="text-right">
                 <p className="font-semibold">تواصل معنا عبر الواتساب</p>
