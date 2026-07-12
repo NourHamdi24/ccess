@@ -1,20 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaInstagram, FaRegEnvelope } from "react-icons/fa";
 import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaMapMarkerAlt,
-  FaPhone,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa6";
+  FiFacebook,
+  FiLinkedin,
+  FiMapPin,
+  FiPhone,
+  FiYoutube,
+} from "react-icons/fi";
+import { PiWhatsappLogo } from "react-icons/pi";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F4F4F4] max-w-7xl mx-auto lg:rounded-[50px] mt-4 px-4 sm:px-6 lg:px-10 py-8">
+    <footer className="bg-[#F4F4F4] max-w-7xl text-[#434343] mx-auto lg:rounded-[50px] mt-4 px-4 sm:px-6 lg:px-10 py-8">
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 font-bold leading-relaxed">
           <div className="flex flex-col gap-2 text-center lg:text-start">
@@ -52,22 +51,22 @@ const Footer = () => {
             <h3 className="font-bold mb-2 text-xl">تواصل معنا</h3>
 
             <div className="flex items-center justify-center lg:justify-start gap-2">
-              <FaMapMarkerAlt className="text-lg shrink-0" />
+              <FiMapPin className="text-lg shrink-0" />
               <div>Nasr City, Cairo Governorate, Egypt</div>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-2">
-              <FaPhone className="text-lg shrink-0" />
+              <FiPhone className="text-lg shrink-0" />
               <p dir="ltr">+20 10 18402400</p>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-2">
-              <FaEnvelope className="text-lg shrink-0" />
+              <FaRegEnvelope className="text-lg shrink-0" />
               <p>info@ccess.gov.eg</p>
             </div>
 
             <div className="flex items-center justify-center lg:justify-start gap-2">
-              <FaWhatsapp className="text-lg shrink-0" />
+              <PiWhatsappLogo className="text-lg shrink-0" />
               <p>تواصل معنا عبر الواتساب</p>
             </div>
           </div>
@@ -75,7 +74,7 @@ const Footer = () => {
 
         <div className="flex justify-center flex-wrap gap-4 mt-8">
           <div className="bg-[rgba(67,67,67,0.1)] rounded-xl p-4 cursor-pointer">
-            <FaFacebook className="text-lg" />
+            <FiFacebook className="text-lg" />
           </div>
 
           <div className="bg-[rgba(67,67,67,0.1)] rounded-xl p-4 cursor-pointer">
@@ -83,11 +82,11 @@ const Footer = () => {
           </div>
 
           <div className="bg-[rgba(67,67,67,0.1)] rounded-xl p-4 cursor-pointer">
-            <FaLinkedin className="text-lg" />
+            <FiLinkedin className="text-lg" />
           </div>
 
           <div className="bg-[rgba(67,67,67,0.1)] rounded-xl p-4 cursor-pointer">
-            <FaYoutube className="text-lg" />
+            <FiYoutube className="text-lg" />
           </div>
         </div>
 
