@@ -102,7 +102,7 @@ const ServicesSection = () => {
                         alt="icon"
                         height={16}
                         width={16}
-                        className="h-8 w-8"
+                        className="h-16 w-16"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-[#434343] ">
