@@ -38,7 +38,7 @@ const ServicesSection = () => {
       subtitle: "نقدم بحوثًا ودراسات اقتصادية متخصصة.",
       image: "/services/service2.jpg",
       href: "/news/4",
-      icon: "/serviceIcon.png",
+      icon: "",
     },
   ];
   return (
@@ -98,7 +98,7 @@ const ServicesSection = () => {
                   <div className="flex items-center justify-items-start gap-8 mb-6">
                     <div className="flex h-15 w-15 items-center justify-center rounded-md bg-[rgba(30,58,95,0.1)]">
                       <Image
-                        src={service.icon}
+                        src="/serviceIcon.png"
                         alt="icon"
                         height={10}
                         width={10}
