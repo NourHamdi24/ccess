@@ -14,7 +14,6 @@ const ServicesSection = () => {
       subtitle: "نساعد المؤسسات على إعادة هيكلة.",
       image: "/services/service1.jpg",
       href: "/services/1",
-      icon: "/serviceIcon.png",
     },
     {
       id: 2,
@@ -22,7 +21,6 @@ const ServicesSection = () => {
       subtitle: "نقدم بحوثًا ودراسات اقتصادية متخصصة.",
       image: "/services/service2.jpg",
       href: "/services/2",
-      icon: "/serviceIcon.png",
     },
     {
       id: 3,
@@ -30,7 +28,6 @@ const ServicesSection = () => {
       subtitle: "نساعد المؤسسات على إعادة هيكلة.",
       image: "/services/service1.jpg",
       href: "/services/3",
-      icon: "/serviceIcon.png",
     },
     {
       id: 4,
@@ -38,7 +35,6 @@ const ServicesSection = () => {
       subtitle: "نقدم بحوثًا ودراسات اقتصادية متخصصة.",
       image: "/services/service2.jpg",
       href: "/news/4",
-      icon: "",
     },
   ];
   return (
@@ -98,7 +94,7 @@ const ServicesSection = () => {
                   <div className="flex items-center justify-items-start gap-8 mb-6">
                     <div className="flex h-15 w-15 items-center justify-center rounded-md bg-[rgba(30,58,95,0.1)]">
                       <Image
-                        src="/services/serviceicon.svg"
+                        src="/1.svg"
                         alt="icon"
                         height={16}
                         width={16}
