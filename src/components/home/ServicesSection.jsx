@@ -97,11 +97,9 @@ const ServicesSection = () => {
                 <div className="p-5">
                   <div className="flex items-center justify-items-start gap-8 mb-6">
                     <div className="flex h-15 w-15 items-center justify-center rounded-md bg-[rgba(30,58,95,0.1)]">
-                      <Image
+                      <img
                         src="/services/serviceicon.svg"
                         alt="icon"
-                        height={16}
-                        width={16}
                         className="h-16 w-16"
                       />
                     </div>
