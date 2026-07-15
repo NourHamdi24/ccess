@@ -7,11 +7,11 @@ const FactsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col items-center justify-center gap-4 p-6">
           <div className="bg-[rgba(0,0,0,0.1)] p-4 rounded-full">
-            <img
+            <Image
               src="/faxicon1.png"
               alt="icon1"
-              width={20}
-              height={20}
+              width={36}
+              height={36}
               className="w-9 h-9"
             />
           </div>
@@ -27,6 +27,7 @@ const FactsSection = () => {
               width={20}
               height={20}
               className="w-9 h-9"
+              unoptimized
             />
           </div>
           <h1 className="text-5xl font-bold text-[#1E3A5F]">50+</h1>
