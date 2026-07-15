@@ -14,6 +14,7 @@ const ServicesSection = () => {
       subtitle: "نساعد المؤسسات على إعادة هيكلة.",
       image: "/services/service1.jpg",
       href: "/services/1",
+      icon: "/serviceIcon.png",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ const ServicesSection = () => {
       subtitle: "نقدم بحوثًا ودراسات اقتصادية متخصصة.",
       image: "/services/service2.jpg",
       href: "/services/2",
+      icon: "/serviceIcon.png",
     },
     {
       id: 3,
@@ -28,6 +30,7 @@ const ServicesSection = () => {
       subtitle: "نساعد المؤسسات على إعادة هيكلة.",
       image: "/services/service1.jpg",
       href: "/services/3",
+      icon: "/serviceIcon.png",
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ const ServicesSection = () => {
       subtitle: "نقدم بحوثًا ودراسات اقتصادية متخصصة.",
       image: "/services/service2.jpg",
       href: "/news/4",
+      icon: "/serviceIcon.png",
     },
   ];
   return (
@@ -94,11 +98,11 @@ const ServicesSection = () => {
                   <div className="flex items-center justify-items-start gap-8 mb-6">
                     <div className="flex h-15 w-15 items-center justify-center rounded-md bg-[rgba(30,58,95,0.1)]">
                       <Image
-                        src="/1.svg"
+                        src={service.icon}
                         alt="icon"
-                        height={16}
-                        width={16}
-                        className="h-16 w-16"
+                        height={10}
+                        width={10}
+                        className="h-8 w-8"
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-[#434343] ">

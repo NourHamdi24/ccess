@@ -24,7 +24,7 @@ const Research = ({ services }) => {
           <div className="w-full lg:w-3/5 text-center lg:text-start">
             <div className="w-14 h-14 md:w-16 md:h-16 p-3 md:p-4 rounded-2xl bg-[rgba(30,58,95,0.1)] mb-5 mx-auto lg:mx-0">
               <Image
-                src="/services/icon1.png"
+                src="/services/Icon1.png"
                 alt="icon"
                 width={50}
                 height={50}
