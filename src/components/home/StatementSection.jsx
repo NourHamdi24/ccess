@@ -3,9 +3,9 @@ import React from "react";
 const StatementSection = () => {
   return (
     <div className="container  overflow-visible">
-      <div className="grid grid-cols-1  lg:grid-cols-3 items-center justify-items-center lg:justify-items-normal lg:gap-50 xl:gap-0 relative  rounded-[50px] bg-linear-to-br from-[#3E78C5] to-[#1E3A5F]">
+      <div className="grid grid-cols-1  lg:grid-cols-3 items-center justify-items-center lg:justify-items-normal lg:gap-50 xl:gap-0 relative  rounded-[50px] bg-linear-to-br from-[#6FA0DA] to-[#2E547D]">
         <div className="relative w-80 lg:w-108 pt-4 xl:w-auto ">
-          <div className="absolute inset-x-0 bottom-0  top-3 rounded-full border border-white lg:border-0 bg-white/10 lg:bg-transparent" />
+          <div className="absolute inset-x-1  bottom-8 md:bottom-14 md:inset-x-3  top-0 rounded-full border border-white lg:border-0 bg-white/10 lg:bg-transparent" />
           <Image
             src="/Object.png"
             alt="object"
@@ -13,7 +13,7 @@ const StatementSection = () => {
             height={281}
             className="absolute  w-20 h-auto top-6 lg:-top-30 right-4 lg:right-6"
           />
-          <div className="relative z-10 block lg:hidden overflow-hidden rounded-b-full h-full">
+          <div className="relative z-10 -top-8 md:-top-14 block lg:hidden overflow-hidden rounded-b-full h-full">
             <Image src="/smallceo.svg" alt="ceo" width={900} height={900} />
           </div>
 
