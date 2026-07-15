@@ -100,9 +100,10 @@ const ServicesSection = () => {
                       <Image
                         src="/serviceicon.svg"
                         alt="icon"
-                        height={10}
-                        width={10}
+                        height={16}
+                        width={16}
                         className="h-8 w-8"
+                        unoptimized
                       />
                     </div>
                     <h3 className="text-2xl font-bold text-[#434343] ">
