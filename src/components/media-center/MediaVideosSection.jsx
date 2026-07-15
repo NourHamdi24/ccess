@@ -87,9 +87,7 @@ const MediaVideosSection = ({ date }) => {
         videoSrc={popupVideo}
         onClose={() => setPopupVideo(null)}
       />
-      <section
-        className={`z-10 py-16 md:py-20 ${styles.swiper_wrapper_custom}`}
-      >
+      <section className={`z-10 ${styles.swiper_wrapper_custom}`}>
         <Swiper
           spaceBetween={20}
           breakpoints={{
@@ -106,7 +104,7 @@ const MediaVideosSection = ({ date }) => {
               slidesPerView: 4,
             },
             1600: {
-              slidesPerView: 4.5,
+              slidesPerView: 5,
             },
           }}
         >
