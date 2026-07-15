@@ -7,7 +7,7 @@ const StatementSection = () => {
         <div className="relative w-80 lg:w-108 pt-4 xl:w-auto ">
           <div className="absolute inset-x-0 bottom-0  top-3 rounded-full border border-white lg:border-0 bg-white/10 lg:bg-transparent" />
           <Image
-            src="/object.png"
+            src="/Object.png"
             alt="object"
             width={92}
             height={281}

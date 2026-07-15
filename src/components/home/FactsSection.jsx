@@ -8,10 +8,10 @@ const FactsSection = () => {
         <div className="flex flex-col items-center justify-center gap-4 p-6">
           <div className="bg-[rgba(0,0,0,0.1)] p-4 rounded-full">
             <Image
-              src="/faxicon1.png"
+              src="/faxIcon1.svg"
               alt="icon1"
-              width={36}
-              height={36}
+              width={20}
+              height={20}
               className="w-9 h-9"
             />
           </div>
@@ -22,12 +22,11 @@ const FactsSection = () => {
         <div className="relative flex flex-col items-center justify-center gap-4 p-6">
           <div className="bg-[rgba(0,0,0,0.1)] p-4 rounded-full">
             <Image
-              src="/faxicon2.svg"
+              src="/faxIcon2.svg"
               alt="icon2"
               width={20}
               height={20}
               className="w-9 h-9"
-              unoptimized
             />
           </div>
           <h1 className="text-5xl font-bold text-[#1E3A5F]">50+</h1>
@@ -39,7 +38,7 @@ const FactsSection = () => {
         <div className="relative flex flex-col items-center justify-center gap-4 p-6">
           <div className="bg-[rgba(0,0,0,0.1)] p-4 rounded-full">
             <Image
-              src="/faxicon3.svg"
+              src="/faxIcon3.svg"
               alt="icon3"
               width={20}
               height={20}
@@ -57,7 +56,7 @@ const FactsSection = () => {
 
           <div className="bg-[rgba(0,0,0,0.1)] p-4 rounded-full">
             <Image
-              src="/faxicon4.svg"
+              src="/faxIcon4.svg"
               alt="icon4"
               width={20}
               height={20}
