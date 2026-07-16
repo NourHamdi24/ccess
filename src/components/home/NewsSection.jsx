@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import VideoPopup from "./VideoPopup";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const NewsSection = () => {
@@ -69,6 +70,7 @@ const NewsSection = () => {
         <span className="absolute left-1/2 -translate-x-1/2 lg:inset-s-0 lg:translate-x-0 -bottom-6 h-1 w-20 bg-[#EC4D38]" />
       </div>
       <Swiper
+        modules={[Autoplay]}
         spaceBetween={16}
         slidesPerView={1}
         breakpoints={{
@@ -80,6 +82,11 @@ const NewsSection = () => {
             slidesPerView: 3,
             spaceBetween: 32,
           },
+        }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
       >
         {articles.map((article) => {
