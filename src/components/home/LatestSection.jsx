@@ -64,7 +64,7 @@ const LatestSection = () => {
     <div className="w-full overflow-hidden">
       <div className="relative text-center lg:text-start mb-16 container">
         <h1 className="text-[#1E3A5F] font-bold text-3xl md:text-4xl">
-          أحدث الإصدارات
+          أخر المستجدات
         </h1>
 
         <span className="absolute left-1/2 -translate-x-1/2 lg:inset-s-4 lg:translate-x-0 -bottom-6 h-1 w-20 bg-[#EC4D38]" />
@@ -77,7 +77,13 @@ const LatestSection = () => {
         }}
       >
         {/* Overlay */}
-        {/* <div className="absolute inset-0 bg-black/20" /> */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(40,69,145,0.5), rgba(255,255,255,0.5))",
+          }}
+        />
 
         {/* Content */}
         <div className="relative z-10 py-16 md:py-24 px-4 lg:px-0 lg:ml-20">

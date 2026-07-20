@@ -2,7 +2,7 @@ import React from "react";
 
 const BannerSection = () => {
   return (
-    <section className="relative container mt-14 pb-6">
+    <section className="relative container mt-14 mb-30 pb-6">
       <div className="rounded-[50px] overflow-x-hidden">
         <div
           className="relative h-[650px] bg-cover bg-center rounded-[50px] overflow-hidden"

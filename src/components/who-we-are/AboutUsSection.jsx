@@ -26,7 +26,7 @@ const AboutUsSection = () => {
   ];
   return (
     <div className="container">
-      <div className="h-150">
+      <div className="h-70 lg:h-150">
         <Image
           src="/ccess.png"
           alt="ccess logo"

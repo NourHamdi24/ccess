@@ -30,7 +30,7 @@ const LatestNewsSection = () => {
   ];
   return (
     <section className="container">
-      <div className="relative text-center lg:text-start mb-16 container">
+      <div className="relative text-center lg:text-start mb-10 lg:mb-16 container">
         <h1 className="text-[#1E3A5F] font-bold text-3xl md:text-4xl">
           أخر الأخبار وفاعليات المركز
         </h1>
